@@ -1,0 +1,182 @@
+body {
+  background-color: #666666;
+  margin: 0;
+}
+fieldset {
+  width: 500px;
+}
+legend {
+  font-family: arial, helvetica;
+  font-size: 20px;
+  font-weight: bold;
+}
+.element {
+  margin: 15px;
+}
+.element label {
+  width: 105px;
+  float: left;
+  text-align: right;
+  margin-right: 10px;
+  display: block;
+	font-weight: bold;
+  font-family: arial, helvetica;
+  font-size: 13px;
+}
+.element input.submit {
+  font-size: 8pt;
+  padding: 0px 5px 0px 5px;
+  border: 2px solid #000000;
+  text-align: center;
+  font-weight: bold;
+}
+.element input.text {
+  width: 150px;
+  border: 1px solid #000000;
+  text-align: left;
+}
+.element select {
+  border: 1px solid #000000;
+}
+.element textarea {
+  width: 150px;
+  height: 60px;
+  border: 1px solid #000000;
+  text-align: left;
+}
+/* LIST */
+table.list {
+  padding: 7px;
+  background-color: #0099CC;
+  font-family: verdana, arial, helvetica;
+}
+/* TITLE */
+table.list td.title div#title {
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  padding-top: 5px;
+}
+table.list td.title a {
+  height: 21px;
+  padding-top: 9px;
+  text-decoration: none;
+  font-size: 11px;
+  color: #99CCFF;
+  cursor: pointer;
+}
+table.list td.title a:hover {
+  color: #000000;
+}
+table.list td.data {
+  margin-top: 10px;
+  background-color: #66CCFF;
+  font-family: arial, helvetica;
+}
+/* DATA */
+table.list td.data table th {
+  background-color: #336699;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  color: #FFFFFF;
+  padding: 5px;
+}
+table.list td.data table td {
+  margin-top: 1px;
+  background-color: #FFFFFF;
+  text-align: center;
+  font-size: 11px;
+  padding: 4px;
+}
+table.list td.data table td:hover {
+  background-color: #CCCCCC;
+}
+/* FILTER */
+table.list td.filter {
+    height: 40px;
+    background-color: #99CCFF;
+}
+table.list td.filter div.formElement {
+  /*width: 150px;*/
+  height: 30px;
+  margin-top: 5px;
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-right: 5px;
+  float: left;
+}
+table.list td.filter div.formElement label {
+  font-family: verdana, arial, helvetica;
+  font-size: 11px;
+  color: #003366;
+  text-align: left;
+}
+table.list td.filter div.formElement input {
+  width: 60px;
+  font-size: 11px;
+  border: 1px solid gray;
+}
+table.list td.filter div.formElement input:hover, select:hover {
+  background-color: #CCFFFF;
+}
+table.list td.filter div.formElement input#submit {
+  font-weight: bold;
+  font-size: 10px;
+  margin-top: 4px;
+  border: 1px solid gray;
+  color: #990099;
+  letter-spacing: 2px;
+}
+table.list td.filter div.formElement select {
+  width: 150px;
+  border: 1px solid gray;
+  font-size: 11px;
+  color: #990099;
+  /*background-color: #CCFFFF;*/
+}
+/* PAGING */
+table.list td.paging {
+  height: 20px;
+  margin-top: 10px;
+  text-align: center;
+}
+table.list td.paging input {
+  width: 20px;
+  height: 12px;
+  border: 1px solid gray;
+  vertical-align: text-bottom;
+  font-family: tahoma, arial, helvetica;
+  font-size: 11px;
+  text-align: center;
+}
+table.list td.paging span {
+  font-family: tahoma, arial, helvetica;
+  font-size: 11px;
+  color: #003366;
+}
+table.list td.paging span#link {
+  font-family: arial, helvetica;
+  font-size: 14px;
+  color: #000000;
+  cursor: pointer;
+}
+table.list td.paging span#link:hover {
+  font-weight: bold;
+  color: #000000;
+}
+.nav {
+  width: 560px;
+  text-align: left;
+  font-family: tahoma, arial, helvetica;
+  font-size: 12px;
+  background-color: #66CCFF;
+  padding: 5px;
+  border: 5px solid #0099CC;
+  color: #003366;
+}
+.nav span {
+  font-weight: bold;
+  color: #333;
+  letter-spacing: 1px;
+}

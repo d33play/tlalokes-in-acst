@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dataset name="all">
+  <AuthRoles Id="1" Name="Administrator" RoleStatus="1"/>
+  <AuthUsers Id="1" Role="1" Email="admin" Password="$6$rounds=5000$67726f73656b6f6c$goj/e.fL5GHqyjtGu/XtJb8Fn4aXSeBgcCP9bKt6T8s6lKclwxObdZe7x/yH.4h3B3EpIt4deS50E.hN9lFcq1" UserStatus="1"/>
+  <AuthAccessProfiles Id="1" Name="Administrators" Description="Administrators access profile"/>
+  <AuthAccessProfilesRoles Id="1" Profile="1" Role="1" />
+</dataset>

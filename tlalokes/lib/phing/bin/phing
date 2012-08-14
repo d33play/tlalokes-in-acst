@@ -1,0 +1,114 @@
+#!/bin/sh
+# Shell wrapper for Phing
+# $Id: phing 151 2007-02-13 20:44:58Z hans $
+#
+# This script will do the following:
+# - check for PHP_COMMAND env, if found, use it.
+#   - if not found assume php is on the path
+# - check for PHING_HOME evn, if found use it
+#   - if not look for it
+# - check for PHP_CLASSPATH, if found use it
+#   - if not found set it using PHING_HOME/classes
+
+# Put all args in quotes
+phing_exec_debug=false
+phing_exec_args=
+for arg in "$@" ; do
+  phing_exec_args="$phing_exec_args \"$arg\""
+done
+
+if [ -z "$PHING_HOME" ] ; then
+
+  if [ -d /opt/phing ] ; then 
+    PHING_HOME=/opt/phing
+  fi
+
+  if [ -d "${HOME}/opt/phing" ] ; then 
+    PHING_HOME="${HOME}/opt/phing"
+  fi
+
+  if [ -d "/usr/local/phing" ] ; then 
+    PHING_HOME="/usr/local/phing"
+  fi
+
+  if [ -d "${HOME}/usr/phing" ] ; then 
+    PHING_HOME="${HOME}/usr/phing"
+  fi
+  
+  if [ -d "${PWD}/../../" ]; then
+    PHING_HOME="${PWD}/../../"
+  fi
+  
+  ## resolve links - $0 may be a link to phing's home
+  PRG="$0"
+  progname=`basename "$0"`
+  saveddir=`pwd`
+
+  # need this for relative symlinks
+  dirname_prg=`dirname "$PRG"`
+  cd "$dirname_prg"
+  
+  while [ -h "$PRG" ] ; do
+    ls=`ls -ld "$PRG"`
+    link=`expr "$ls" : '.*-> \(.*\)$'`
+    if expr "$link" : '/.*' > /dev/null; then
+	PRG="$link"
+    else
+	PRG=`dirname "$PRG"`"/$link"
+    fi
+  done
+  
+  PHING_HOME=`dirname "$PRG"`/..
+
+  cd "$saveddir"
+
+  # make it fully qualified
+  PHING_HOME=`cd "$PHING_HOME" && pwd`
+  
+  # make it available in PHP via getenv("PHING_HOME")
+  export PHING_HOME
+fi
+
+# ---------------
+# Finding PHP bin
+# ---------------
+if [ -z "$PHP_COMMAND" ] ; then
+
+  if [ -e "/bin/php" ]; then
+    PHP_COMMAND="/bin/php"
+  fi
+	
+  if [ -e "/usr/bin/php" ]; then
+    PHP_COMMAND="/usr/bin/php"
+  fi
+	
+  if [ -e "/usr/local/bin/php" ]; then
+    PHP_COMMAND="/usr/local/bin/php"
+  fi
+
+  if [ -e "/usr/local/php/bin/php" ]; then
+    PHP_COMMAND="/usr/local/php/bin/php"
+  fi
+
+  # --------------------------------------------------------
+  # If not any of the above please add your own php bin path
+  # --------------------------------------------------------
+  if [ -e "/usr/local/php5/bin/php" ]; then
+    PHP_COMMAND="/usr/local/php5/bin/php -d include_path=/usr/local/php5/lib/php:${PWD}../../../../creole"
+  fi
+
+  export PHP_COMMAND
+fi
+
+if (test -z "$PHP_CLASSPATH") ; then
+  PHP_CLASSPATH=$PHING_HOME/classes
+  export PHP_CLASSPATH
+fi
+
+phing_exec_cmd="exec $PHP_COMMAND -d html_errors=off -qC \"$PHING_HOME/bin/phing.php\" -logger phing.listener.AnsiColorLogger $phing_exec_args"
+
+if $phing_exec_debug ; then
+  echo $phing_exec_cmd
+fi
+
+eval $phing_exec_cmd

@@ -1,0 +1,22 @@
+Options -Indexes
+
+Options +FollowSymLinks
+
+ErrorDocument 404 /index.php
+
+<Files favicon.ico>
+  ErrorDocument 404 "The requested file favicon.ico was not found.
+</Files>
+
+DirectoryIndex index.php
+
+<IfModule mod_rewrite.c>
+  RewriteEngine on
+  #RewriteBase /
+
+  # Rewrite URLs of the form 'x' to the form 'index.php?r=x'.
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_URI} !=/favicon.ico
+  RewriteRule ^(.*)$ index.php?r=$1 [L,QSA]
+</IfModule>
