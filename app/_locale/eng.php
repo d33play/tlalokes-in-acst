@@ -14,7 +14,7 @@ $l['controllers']['PublicCtl']['controlador'] = 'Label for Public controller';
 $l['controllers']['PublicCtl']['actions']['loadindex']['gallery'] = 'maingallery';
 
 $l['controllers']['PublicCtl']['actions']['loadindex']['title1'] = 'Video';
-$l['controllers']['PublicCtl']['actions']['loadindex']['content1'] = 'bla bla bla';
+$l['controllers']['PublicCtl']['actions']['loadindex']['content1'] = 'content 2 for the index';
 
 $l['controllers']['PublicCtl']['actions']['loadindex']['title2'] = '';
 $l['controllers']['PublicCtl']['actions']['loadindex']['content2'] = 'bla bla bla';
