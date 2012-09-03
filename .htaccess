@@ -10,9 +10,12 @@ ErrorDocument 404 /index.php
 
 DirectoryIndex index.php
 
+#dejar en local comentar en server la condicional
 <IfModule mod_rewrite.c>
   RewriteEngine on
+  #En server cambiar la ruta
   RewriteBase /
+  #RewriteBase /propuesta2/htdocs
 
   # Rewrite URLs of the form 'x' to the form 'index.php?r=x'.
   RewriteCond %{REQUEST_FILENAME} !-f

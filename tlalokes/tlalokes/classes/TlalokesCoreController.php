@@ -235,6 +235,7 @@ abstract class TlalokesCoreController {
     $this->response->_img = $this->response->img = $uri . 'img/';
     $this->response->_css = $this->response->css = $uri . 'css/';
     $this->response->_js  = $this->response->js  = $uri . 'js/';
+    $this->response->_extra  = $this->response->extra  = $uri . 'extra/';
 
     if ( isset( $this->response->_layout ) ) {
       // set local variables from TlalokesResponse in Layout

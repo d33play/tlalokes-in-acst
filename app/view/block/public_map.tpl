@@ -5,11 +5,11 @@
 	</div>
 	<div class="row">
 		<div class="sixteen columns alpha" id="content_mapa"><div>
-			<object data="<?=$img;?>mx_map.svg" type="image/svg+xml" id="mx_map"></object>
+			<object width="70%" data="<?=$img;?>mx_map.svg" type="image/svg+xml" id="mx_map" ></object>
 		</div></div>
 		
 		<script src="<?=$js;?>map.js"></script>
 		</script>
 	</div>
-	<div id="edo"></div>
+	<div class="six columns content"><div id="edo"></div></div>
 </div>

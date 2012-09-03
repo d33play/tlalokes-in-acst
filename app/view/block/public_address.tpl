@@ -1,13 +1,13 @@
 			<div class="one-third column content"><div>
 				<h3><?=$addtitle;?></h3>
-				<p>Avenida Guadalupe #4646. <br />
-					Col. Jardines de Guadalupe. <br />
-					Zapopan, Jalisco. México. CP. 45030</p>
+				<p><?=$street;?><br />
+					<?=$col;?><br />
+					<?=$other;?></p>
 				<p><?=$tel;?>:<br />
-					(0133) 3699-1278
-					(0133) 3609-7689<br />
-					Fax: (0133) 3651-7610
+					<?=$tel1;?>, 
+					<?=$tel2;?><br />
+					<?=$fax;?>
 				</p>
 				<p><?=$mail;?>:<br />
-					<a href="mailto: contacto@acustimuros.com">contacto@acustimuros.com</a></p>
+					<a href="mailto: <?=$mailto;?>"><?=$mailto;?></a></p>
 			</div></div>

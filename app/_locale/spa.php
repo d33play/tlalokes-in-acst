@@ -7,6 +7,7 @@ $l['controllers']['PublicCtl']['company'] = 'Acustimuros S.A de C.V.';
 $l['controllers']['PublicCtl']['authorweb'] = 'http://michelle.slmx.org/';
 $l['controllers']['PublicCtl']['year'] = '2012';
 
+$l['controllers']['PublicCtl']['menu0'] = 'Inicio';
 $l['controllers']['PublicCtl']['menu1'] = 'Acerca de';
 $l['controllers']['PublicCtl']['menu2'] = 'Productos';
 $l['controllers']['PublicCtl']['menu3'] = 'Contacto';
@@ -22,13 +23,16 @@ $l['controllers']['PublicCtl']['contactmenu1'] = 'Representantes';
 //+++++++++++++++++ index +++++++++++++++++++++++++++++++++++++++++++++++++
 
 $l['controllers']['PublicCtl']['actions']['index']['title1'] = 'Video';
-$l['controllers']['PublicCtl']['actions']['index']['content1'] = 'bla bla bla';
+$l['controllers']['PublicCtl']['actions']['index']['content1'] = '';
 $l['controllers']['PublicCtl']['actions']['index']['title2'] = 'Catálogo virtual';
+$l['controllers']['PublicCtl']['actions']['index']['url2'] = 'folleto/catalogo.html';
 $l['controllers']['PublicCtl']['actions']['index']['content2'] = '
 	Contamos con un catálogo virtual en versión para computadoras de escritorio, 
 	desde el cual puedes revisar nuestros productos, acabados y telas.';
+$l['controllers']['PublicCtl']['actions']['index']['title21'] = 'Versión PDF (sin flash)';
+$l['controllers']['PublicCtl']['actions']['index']['url21'] = 'folleto/files/catalogo2012.pdf';
 $l['controllers']['PublicCtl']['actions']['index']['title3'] = 'Redes sociales';
-$l['controllers']['PublicCtl']['actions']['index']['content3'] = 'bla bla bla';
+$l['controllers']['PublicCtl']['actions']['index']['content3'] = '';
 
 //+++++++++++++++++ about +++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -248,6 +252,13 @@ $l['controllers']['PublicCtl']['actions']['contact']['formmessage'] = 'Mensaje';
 $l['controllers']['PublicCtl']['actions']['contact']['formsubmit'] = 'Enviar';
 
 $l['controllers']['PublicCtl']['actions']['contact']['addtitle'] = 'Oficinas Administrativas';
+$l['controllers']['PublicCtl']['actions']['contact']['street'] = 'Avenida Guadalupe #4636.';
+$l['controllers']['PublicCtl']['actions']['contact']['col'] = 'Col. Jardines de Guadalupe.';
+$l['controllers']['PublicCtl']['actions']['contact']['other'] = 'Zapopan, Jalisco. México. CP. 45030';
+$l['controllers']['PublicCtl']['actions']['contact']['tel1'] = '(0133) 3699-1278';
+$l['controllers']['PublicCtl']['actions']['contact']['tel2'] = '(0133) 3609-7686';
+$l['controllers']['PublicCtl']['actions']['contact']['fax'] = 'Fax: (0133) 3651-7610';
+$l['controllers']['PublicCtl']['actions']['contact']['mailto'] = 'contacto@acustimuros.com';
 
 //+++++++++++++++++ agents +++++++++++++++++++++++++++++++++++++++++++++++++
 $l['controllers']['PublicCtl']['actions']['agents']['head1'] = 'Nuestros representantes en cada región';

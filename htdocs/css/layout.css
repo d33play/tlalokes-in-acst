@@ -17,11 +17,11 @@
 /* #Site Styles
 ================================================== */
 body {
-	background-image: url("../img/floral_wallpaper2.jpg");
+	background-image: url("../img/background.gif");
 }
 
 header{
-	background-color: black;
+	background-color: #505050;
 	margin: 0 0 10px 0;
 	overflow: hidden;
 }
@@ -33,7 +33,7 @@ header a{
 
 
 footer{
-	background-color: black;
+	background-color: #505050;
 	margin: 20px 0 0px 0;
 	color: white;
 	padding: 5px;
@@ -92,7 +92,6 @@ nav {
 			font-weight: bold;
 			-moz-border-radius: 4px;
 			-webkit-border-radius: 4px;
-			font-size: 1em;
 			display: block;
 			min-height:19px;
 			text-align:center;
@@ -100,10 +99,17 @@ nav {
 			margin: 0 5px;
 			width: 115px;
 		}
-		.navegacion li a:hover{
+		.n1{
+			font-size: 1.3em;
+		}
+		.n2{
+			font-size: 1em;
+		}
+		
+		.navegacion1 li a:hover{
 			background-color : #333;
 		}
-		.navegacion li ul{
+		.navegacion1 li ul{
 			display: none;
 			position: absolute;
 			width:110px;

@@ -28,7 +28,7 @@
 
 	<!-- Favicons
 	================================================== -->
-	<link rel="shortcut icon" href="<?=$img;?>favicon.ico">
+	<link rel="shortcut icon" href="<?=$img;?>favicon.png">
 	<link rel="apple-touch-icon" href="<?=$img;?>apple-touch-icon.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="<?=$img;?>apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="<?=$img;?>apple-touch-icon-114x114.png">
@@ -65,30 +65,41 @@ tlalokes_layout_zone('body',$_layout);
 ?>
 		</div>
 <?php 
-	if($title1 && $content1): 
+	if($title1): 
 ?>	
-    	<div class="one-third column content"><div>
+    	<div class="ten columns content"><div>
 			<h3><?=$title1;?></h3>
-			<p><?=$content1;?></p>
+			<iframe width="100%" height="315" src="http://www.youtube.com/embed/WJrWFXJfG8I" frameborder="0" allowfullscreen></iframe>
 		</div></div>
 <?php 
 	endif; 
+	
 
 	if($title2 && $content2): 
 ?>	
-		<div class="one-third column content"><div>
-			<h3><a href="<?=$url2;?>"><?=$title2;?></a></h3>
-			<p><?=$content2;?></p>
-		</div></div>	
+		<div class="six columns omega">
+			<div class="row">
+			<div class="five column content"><div>
+				<h3><a href="<?= $extra.$url2; ?>" target="_blank"><?=$title2;?></a></h3>
+				<p><?=$content2;?></p>
+				<p><a href="<?= $extra.$url21; ?>" target="_blank"><?=$title21;?></a></p>
+			</div></div>
+			</div>
+				
 <?php 
 	endif; 
 
-	if($title3 && $content3): 
+	if($title3): 
 ?>	
-		<div class="one-third column content"><div>
-			<h3><?=$title3;?></h3>
-			<p><?=$content3;?></p>
-		</div></div>
+			<div class="row">
+			<div class="five column content"><div>
+				<h3><?=$title3;?></h3>
+				<p><?=$content3;?></p>
+				<a href="http://www.facebook.com/Acustimuros" target="_blank"><img src="<?=$img;?>fb.png"/></a>
+				<a href="https://twitter.com/@Acustimuros" target="_blank"><img src="<?=$img;?>tw.png"/></a>
+			</div></div>
+			</div>
+		</div>
 <?php 
 	endif; 
 ?>		

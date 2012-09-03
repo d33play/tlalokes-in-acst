@@ -18,7 +18,7 @@ class PublicBss{
 	/**
 	 * @param string $current current locale
 	 * @param string $default default locale
-	 * @return array $result contains langurl, lang and changelang
+	 * @return string contains langurl, lang and changelang
 	 */
 	public static function evaluateLocale ( $current, $default )
 	{
