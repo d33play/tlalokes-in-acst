@@ -68,26 +68,8 @@ $l['controllers']['PublicCtl']['actions']['about']['para4'] = '
 
 $l['controllers']['PublicCtl']['actions']['products']['head1'] = '';
 $l['controllers']['PublicCtl']['actions']['products']['para1'] = '';
-$l['controllers']['PublicCtl']['actions']['products']['head2'] = 'Acustiflex 1050';
+$l['controllers']['PublicCtl']['actions']['products']['head2'] = 'Portable 850';
 $l['controllers']['PublicCtl']['actions']['products']['para2'] = '
-	Is made with a tubular steel frame 18 gage protected with anticorrosive 
-	paint,rigidly welded and assembled with crosspieces of 60 cm each on 
-	both sides, as is the frame of 1100, however, the walls of such panel 
-	are formed with national chipboard of 12 mm and a layer of three inches 
-	of mineral wool to obtain an effective barrier to block sound between 40 and 45 dB.
-	This allows a low cost in production with just high quality 100% acrylic woven fabric.';
-$l['controllers']['PublicCtl']['actions']['products']['head3'] = 'Acustiflex 1100';
-$l['controllers']['PublicCtl']['actions']['products']['para3'] = '
-	is composed by a frame of 18 gage tubular 
-	steel protected with anticorrosive paint, rigidly welded and assembled with 
-	crosspieces of 60 cm each on both sides. These panel walls are formed with 
-	imported half inch MDF and a 3 inch mineral wool layer to achieve an effective 
-	soundproof between 46 and 48 dB depending on the finishings of the room.
-	The seal system of every panel is simple and practical to activated by using 
-	the handle on the side of panel. The finishing of the movable walls is in 
-	100% acrylic woven fabric.';
-$l['controllers']['PublicCtl']['actions']['products']['head4'] = 'Portable 850';
-$l['controllers']['PublicCtl']['actions']['products']['para4'] = '
 	This model does not have great capacity for sound insulation, it is an ideal 
 	product for a height between 2.4 meters to 3 meters to meet the needs 
 	of dividing small meeting areas, boardrooms, cubicles, exhibition, 
@@ -95,6 +77,24 @@ $l['controllers']['PublicCtl']['actions']['products']['para4'] = '
 	The track or channel of this model is embedded in the ceiling or attached 
 	directly to the slab or girder without the need for any additional rails 
 	for transferring and storing the modules that make the wall.';
+$l['controllers']['PublicCtl']['actions']['products']['head3'] = 'Acustiflex 1050';
+$l['controllers']['PublicCtl']['actions']['products']['para3'] = '
+	Is made with a tubular steel frame 18 gage protected with anticorrosive 
+	paint, rigidly welded and assembled with crosspieces of 60 cm each on 
+	both sides, as is the frame of 1100, however, the walls of such panel 
+	are formed with national chipboard of 12 mm and a layer of three inches 
+	of mineral wool to obtain an effective barrier to block sound between 40 and 45 dB.
+	This allows a low cost in production with just high quality 100% acrylic woven fabric.';
+$l['controllers']['PublicCtl']['actions']['products']['head4'] = 'Acustiflex 1100';
+$l['controllers']['PublicCtl']['actions']['products']['para4'] = '
+	is composed by a frame of 18 gage tubular 
+	steel protected with anticorrosive paint, rigidly welded and assembled with 
+	crosspieces of 60 cm each on both sides. These panel walls are formed with 
+	imported half inch MDF and a 3 inch mineral wool layer to achieve an effective 
+	soundproof between 46 and 48 dB depending on the finishing of the room.
+	The seal system of every panel is simple and practical to activated by using 
+	the handle on the side of panel. The finishing of the movable walls is in 
+	100% acrylic woven fabric.';
 $l['controllers']['PublicCtl']['actions']['products']['head5'] = 'Metalmovil 1000';
 $l['controllers']['PublicCtl']['actions']['products']['para5'] = '
 	The metalmovil 1000 his main feature is blocking the access from one area 
@@ -112,7 +112,7 @@ $l['controllers']['PublicCtl']['actions']['product1']['para1'] = '
 	steel protected with anticorrosive paint, rigidly welded and assembled with crosspieces
 	of 60 cm each on both sides.  These panel walls are formed with imported half inch MDF
 	and a 3 inch mineral wool layer to achieve an effective soundproof between 46 and 48 dB
-	depending on the finishings of the room that will be divided.  <br /> The seal system
+	depending on the finishing of the room that will be divided.  <br /> The seal system
 	of every panel is achieved by a pair of upper and lower retractable tabs activated by a
 	bar and a push spring. It is simple and practical to activated by using the handle on the
 	side of panel.<br /> The contact area between panels (assembly) is done with a deep aluminum
@@ -134,6 +134,8 @@ $l['controllers']['PublicCtl']['actions']['product1']['para3'] = '
 	or roof.<br /> The sonic barrier will consist of two panels of 12.7mm of drywall
 	filled with mineral wool.  The joints and seams must be perfectly sealed and caulked and
 	thereby prevent the transmission of noise above the ceiling of the room that is divided.';
+$l['controllers']['PublicCtl']['actions']['product1']['quote1'] = '';
+$l['controllers']['PublicCtl']['actions']['product1']['cite1'] = '';
 
 //+++++++++++++++++ metalmovil1000 +++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -155,12 +157,14 @@ $l['controllers']['PublicCtl']['actions']['product2']['para2'] = '
 	the space between the lobby of the cinema and public space of the area
 	to prevent the passage of people before the rooms are open
 	for admission.  To name a few places where some of the rooms are divided
-	with this model are in Leon, Aguascalientes, Mexicali, Ciudad Juarez and
+	with this model are in Guadalajara, Leon, Aguascalientes, Mexicali, Ciudad Juarez and
 	Guatemala in other countries.';
 $l['controllers']['PublicCtl']['actions']['product2']['head3'] = '';
 $l['controllers']['PublicCtl']['actions']['product2']['para3'] = '
 	We proudly present to you one more alternative to divide spaces and
 	its optimal use, where the noise factor is not required.';
+$l['controllers']['PublicCtl']['actions']['product2']['quote1'] = '';
+$l['controllers']['PublicCtl']['actions']['product2']['cite1'] = '';
 
 //+++++++++++++++++ portable850 +++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -192,6 +196,8 @@ $l['controllers']['PublicCtl']['actions']['product3']['para3'] = '
 	Another option that Acustimuros SA de CV has at your service to divide
 	your premises is model 850, its portable and easy to disassemble and
 	to transport.';
+$l['controllers']['PublicCtl']['actions']['product3']['quote1'] = '';
+$l['controllers']['PublicCtl']['actions']['product3']['cite1'] = '';
 
 //+++++++++++++++++ acustiflex1050 +++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -204,7 +210,7 @@ $l['controllers']['PublicCtl']['actions']['product4']['para1'] = '
 $l['controllers']['PublicCtl']['actions']['product4']['head2'] = 'Features';
 $l['controllers']['PublicCtl']['actions']['product4']['para2'] = '
 	Acustiflex panel model 1050 is made with a tubular steel frame 18 gage
-	protected with anticorrosive paint,rigidly welded and assembled with
+	protected with anticorrosive paint, rigidly welded and assembled with
 	crosspieces of 60 cm each on both sides, as is the frame of 1100, however,
 	the walls of such panel are formed with national chipboard of 12 mm and a
 	layer of three inches of mineral wool to obtain an effective barrier to
@@ -225,6 +231,19 @@ $l['controllers']['PublicCtl']['actions']['product4']['para3'] = '
 	top and bottom on both sides of the panel.  The sound insulating movable
 	walls are manufactured on exact dimensions and specifications to the job
 	requested, so once it has been made it cannot be altered in its measurements.';
+$l['controllers']['PublicCtl']['actions']['product4']['quote1'] = '';
+$l['controllers']['PublicCtl']['actions']['product4']['cite1'] = '';
+
+//+++++++++++++++++ ensamblado y estibado +++++++++++++++++++++++++++++++++++++++++++++++++
+
+$l['controllers']['PublicCtl']['actions']['product5']['head1'] = '';
+$l['controllers']['PublicCtl']['actions']['product5']['para1'] = '';
+$l['controllers']['PublicCtl']['actions']['product5']['head2'] = '';
+$l['controllers']['PublicCtl']['actions']['product5']['para2'] = '';
+$l['controllers']['PublicCtl']['actions']['product5']['head3'] = '';
+$l['controllers']['PublicCtl']['actions']['product5']['para3'] = '';
+$l['controllers']['PublicCtl']['actions']['product5']['quote1'] = '';
+$l['controllers']['PublicCtl']['actions']['product5']['cite1'] = '';
 
 //+++++++++++++++++ contact +++++++++++++++++++++++++++++++++++++++++++++++++
 $l['controllers']['PublicCtl']['actions']['contact']['tel'] = 'Telephone';

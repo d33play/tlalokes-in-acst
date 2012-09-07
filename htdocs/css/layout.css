@@ -87,7 +87,8 @@ nav {
 		}
 		.navegacion li a{
 			text-decoration: none;
-			background : black;
+			background:#333333;
+			border: 1px solid black;
 			opacity: 0.8;
 			font-weight: bold;
 			-moz-border-radius: 4px;
@@ -96,8 +97,12 @@ nav {
 			min-height:19px;
 			text-align:center;
 			color: white;
-			margin: 0 5px;
+			margin: 5px;
 			width: 115px;
+		}
+		.navegacion li a:hover{
+			border: 1px solid white;
+			background : black;
 		}
 		.n1{
 			font-size: 1.3em;

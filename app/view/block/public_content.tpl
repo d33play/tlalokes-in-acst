@@ -6,43 +6,25 @@
 	<p><?=$para2;?></p>
 	</div>
 	<div class="row">
-		<div class="seven columns alpha"><div>
+		<div class="seven columns"><div>
 			<h3><?=$head3;?></h3>
 			<p><?=$para3;?></p>
+		</div></div>
+		<div class="seven columns"><div>
 			<h3><?=$head4;?></h3>
 			<p><?=$para4;?></p>
+		</div></div>
+	</div>
+	<div class="row">
+		<div>
 			<h3><?=$head5;?></h3>
 			<p><?=$para5;?></p>
-		</div></div>
-		<div class="five columns omega"><div>
-<?php 
-	if($quote1 && $cite1): 
-?>	
-			<blockquote>
-				<p><?=$quote1;?></p>
-				<cite><?=$cite1;?></cite>
-			</blockquote>
-<?php 
-	endif; 
-
-	if($quote2 && $cite2): 
-?>
-			<blockquote>
-				<p><?=$quote2;?></p>
-				<cite><?=$cite2;?></cite>
-			</blockquote>
-<?php 
-	endif; 
-
-	if($quote3 && $cite3): 
-?>
-			<blockquote>
-				<p><?=$quote3;?></p>
-				<cite><?=$cite3;?></cite>
-			</blockquote>
-<?php 
-	endif; 
-?>
+		</div>
+	</div>
+	<div class="row">
+		<div class="seven columns"><div>
+			<h3><?=$head6;?></h3>
+			<p><?=$para6;?></p>
 		</div></div>
 	</div>
 </div>

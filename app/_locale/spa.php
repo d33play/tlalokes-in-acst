@@ -41,7 +41,7 @@ $l['controllers']['PublicCtl']['actions']['about']['para1'] = '
 	Acustimuros es una empresa con años de amplia experiencia dedicados a la 
 	fabricación e instalación de muros móviles sonoaislantes para la división y 
 	optimización de espacios en la hotelería y centros de convenciones.<br />
-	Es un equipo de trabajo comprometido con la calidad de nuestro producto, la 
+	Es un equipo de trabajo comprometido con la calidad de nuestros productos, la 
 	excelencia en el servicio y por ende la entera satisfacción del cliente.';
 $l['controllers']['PublicCtl']['actions']['about']['head2'] = 'Nuesta historia';
 $l['controllers']['PublicCtl']['actions']['about']['para2'] = '
@@ -50,9 +50,9 @@ $l['controllers']['PublicCtl']['actions']['about']['para2'] = '
 	somos una empresa mexicana que además de contar con presencia en todo el país, 
 	exporta a países de Centroamérica y el Caribe. Nuestros principales clientes 
 	son los Hoteles, Universidades, Salones de eventos y la industria en general.<br />
-	ACUSTIMUROS, promete seguir creciendo como le ha hecho hasta ahora gracias a 
+	ACUSTIMUROS, promete seguir creciendo como lo ha hecho hasta ahora gracias a 
 	nuestros clientes, eficiencia y la alta calidad en nuestros productos que 
-	nos distingue como una empresa líder en el ramo.';
+	nos distinguen como una empresa líder en el ramo.';
 $l['controllers']['PublicCtl']['actions']['about']['head3'] = 'Misión';
 $l['controllers']['PublicCtl']['actions']['about']['para3'] = '
 	Ofrecer a nuestros clientes productos de gran satisfacción, calidad y 
@@ -63,32 +63,14 @@ $l['controllers']['PublicCtl']['actions']['about']['head4'] = 'Visión';
 $l['controllers']['PublicCtl']['actions']['about']['para4'] = '
 	Expandir nuestras expectativas de diseños, para ofrecer una mejor alternativa 
 	a sus necesidades y requerimientos, siempre con la calidad que nos identifica, 
-	así como la entrega de nuestros productos en tiempo y servicio ofrecido.';	
+	así como la entrega de nuestros productos en tiempo y servicio ofrecido.';
 
 //+++++++++++++++++ products +++++++++++++++++++++++++++++++++++++++++++++++++
 
 $l['controllers']['PublicCtl']['actions']['products']['head1'] = '';
 $l['controllers']['PublicCtl']['actions']['products']['para1'] = '';
-$l['controllers']['PublicCtl']['actions']['products']['head2'] = 'Acustiflex 1050';
+$l['controllers']['PublicCtl']['actions']['products']['head2'] = 'Portable 850';
 $l['controllers']['PublicCtl']['actions']['products']['para2'] = '
-	Está formado por un armazón de acero tubular calibre 18 protegido con pintura 
-	anticorrosiva, soldado y ensamblado con travesaños a 60 cm por ambos lados; 
-	tal como lo es el frame del modelo 1100, sin embargo, las paredes de dicho 
-	panel están formadas con aglomerado nacional de 12 mm y una capa de tres 
-	pulgadas de lana mineral para lograr una barrera efectiva al sonido de entre 
-	40 y 45 dB. Esto permite un bajo costo en su producción con un acabo de alta 
-	calidad en tela tramada 100% acrílica. ';
-$l['controllers']['PublicCtl']['actions']['products']['head3'] = 'Acustiflex 1100';
-$l['controllers']['PublicCtl']['actions']['products']['para3'] = '
-	Está formado por un armazón de acero tubular calibre 18 protegido con pintura 
-	anticorrosiva soldado y ensamblado con travesaños a 60 cm por ambos lados. 
-	Las paredes están formadas con MDF de 1/2" importado y una capa de 3” de lana 
-	mineral para lograr una barrera efectiva al sonido de entre 46 y 48 dB 
-	dependiendo de los acabados del salón. El sistema de sello se acciona en el 
-	canto del panel con un maneral de una forma simple y práctica. El acabado es 
-	de tela tramada 100% acrílica.';
-$l['controllers']['PublicCtl']['actions']['products']['head4'] = 'Portable 850';
-$l['controllers']['PublicCtl']['actions']['products']['para4'] = '
 	El panel portable 850 o desmontable es un producto de bajo nivel de 
 	aislamiento acústico e ideal para una altura entre 2.4 m a 3 m y que cumple 
 	con las necesidades de dividir áreas para pequeñas reuniones, salas de juntas, 
@@ -96,6 +78,24 @@ $l['controllers']['PublicCtl']['actions']['products']['para4'] = '
 	recinto de gran capacidad entre otras. Este modelo requiere un solo riel de 
 	montado sin necesidad de un riel adicional para el traslado y guardado de los 
 	módulos que conforman el muro.';
+$l['controllers']['PublicCtl']['actions']['products']['head3'] = 'Acustiflex 1050';
+$l['controllers']['PublicCtl']['actions']['products']['para3'] = '
+	Está formado por un armazón de acero tubular calibre 18 protegido con pintura 
+	anticorrosiva, soldado y ensamblado con travesaños a 60 cm por ambos lados; 
+	tal como lo es el frame del modelo 1100, sin embargo, las paredes de dicho 
+	panel están formadas con aglomerado nacional de 12 mm y una capa de tres 
+	pulgadas de lana mineral para lograr una barrera efectiva al sonido de entre 
+	40 y 45 dB. Esto permite un bajo costo en su producción con un acabo de alta 
+	calidad en tela tramada 100% acrílica. ';
+$l['controllers']['PublicCtl']['actions']['products']['head4'] = 'Acustiflex 1100';
+$l['controllers']['PublicCtl']['actions']['products']['para4'] = '
+	Está formado por un armazón de acero tubular calibre 18 protegido con pintura 
+	anticorrosiva, soldado y ensamblado con travesaños a 60 cm por ambos lados. 
+	Las paredes están formadas con MDF de 1/2" importado y una capa de 3” de lana 
+	mineral para lograr una barrera efectiva al sonido de entre 46 y 48 dB 
+	dependiendo de los acabados del salón. El sistema de sello se acciona en el 
+	canto del panel con un maneral de una forma simple y práctica. El acabado es 
+	de tela tramada 100% acrílica.';
 $l['controllers']['PublicCtl']['actions']['products']['head5'] = 'Metalmovil 1000';
 $l['controllers']['PublicCtl']['actions']['products']['para5'] = '
 	Metalmovil 1000 es un producto el cual tiene como característica principal 
@@ -125,7 +125,7 @@ $l['controllers']['PublicCtl']['actions']['product1']['para1'] = '
 $l['controllers']['PublicCtl']['actions']['product1']['head2'] = 'Acabado';
 $l['controllers']['PublicCtl']['actions']['product1']['para2'] = '
 	El acabado del muro es de tela tramada 100% acrílica y debajo de esta lleva 
-	una capa de hule espuma (peeler) de 6 mm para ayudar el aislamiento acústico 
+	una capa de hule espuma (peeler) de 6 mm para ayudar al aislamiento acústico 
 	así como darle un aspecto abullonado a la cara del panel (Norma ASTM-E84), 
 	por último lleva un guardapolvo de aluminio con doble vinil tanto superior 
 	como inferior y en ambas caras del panel.<br />
@@ -142,6 +142,8 @@ $l['controllers']['PublicCtl']['actions']['product1']['para3'] = '
 	rellenas con lana mineral. Las juntas y uniones deberán estar perfectamente 
 	selladas y calafateadas y de esta manera evitar la transmisión de ruido por 
 	encima del plafón del recinto que se encuentra dividido.';
+$l['controllers']['PublicCtl']['actions']['product1']['quote1'] = '';
+$l['controllers']['PublicCtl']['actions']['product1']['cite1'] = '';
 
 //+++++++++++++++++ metalmovil1000 +++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -164,12 +166,14 @@ $l['controllers']['PublicCtl']['actions']['product2']['para2'] = '
 	el espacio correspondiente entre el lobby del cine y el espacio público de 
 	la plaza para evitar el paso de la gente antes de que las salas sean abiertas 
 	para su ingreso. Entre sus salas divididas con este modelo se encuentran 
-	León, Aguascalientes, Mexicali, Cd. Juárez y Guatemala en el extranjero por 
+	Guadalajara, León, Aguascalientes, Mexicali, Cd. Juárez y Guatemala en el extranjero por 
 	mencionar algunas.';
 $l['controllers']['PublicCtl']['actions']['product2']['head3'] = '';
 $l['controllers']['PublicCtl']['actions']['product2']['para3'] = '
 	Así, nos enorgullecemos en presentarle a usted una alternativa más para dividir 
 	espacios y darles un óptimo uso, donde el factor acústico no sea requerido.';
+$l['controllers']['PublicCtl']['actions']['product2']['quote1'] = '';
+$l['controllers']['PublicCtl']['actions']['product2']['cite1'] = '';
 
 //+++++++++++++++++ portable850 +++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -181,7 +185,7 @@ $l['controllers']['PublicCtl']['actions']['product3']['para1'] = '
 	ingresos o creación de pasillos a un recinto de gran capacidad entre otras.<br />
 	Este modelo no tiene gran capacidad de aislamiento acústico, pero tiene la 
 	ventaja de poder ser desmontado y trasladado a una bodega destinada para su 
-	almacenamiento, ya que a diferencia del modelo 1100, donde se requiere de un 
+	almacenaje, ya que a diferencia del modelo 1100, donde se requiere de un 
 	riel de posicionamiento, uno de traslado y uno para el guardado de los paneles; 
 	el riel o canal de este modelo de igual manera va empotrado en el plafón o 
 	fijado directamente a la loza o trabe, y puede ir colocado en cualquier área 
@@ -204,6 +208,8 @@ $l['controllers']['PublicCtl']['actions']['product3']['para3'] = '
 	De fácil desmontaje y transportación, el modelo portable 850 es una opción 
 	más que la empresa Acustimuros S.A. de C.V. pone a sus órdenes para dividir 
 	sus recintos.';
+$l['controllers']['PublicCtl']['actions']['product3']['quote1'] = '';
+$l['controllers']['PublicCtl']['actions']['product3']['cite1'] = '';
 
 //+++++++++++++++++ acustiflex1050 +++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -216,7 +222,7 @@ $l['controllers']['PublicCtl']['actions']['product4']['para1'] = '
 $l['controllers']['PublicCtl']['actions']['product4']['head2'] = 'Características';
 $l['controllers']['PublicCtl']['actions']['product4']['para2'] = '
 	El panel Acustiflex modelo 1050 está formado por un armazón de acero tubular 
-	calibre 18 protegido con pintura anticorrosiva rígidamente soldado y ensamblado 
+	calibre 18 protegido con pintura anticorrosiva, rígidamente soldado y ensamblado 
 	con travesaños a cada 60 cm por ambos lados; tal como lo es el frame del modelo 
 	1100, sin embargo, las paredes de dicho panel están formadas con aglomerado 
 	nacional de 12 mm y una capa de tres pulgadas de lana mineral para lograr 
@@ -240,6 +246,19 @@ $l['controllers']['PublicCtl']['actions']['product4']['para3'] = '
 	son fabricados en dimensiones y características exactas de la obra en cuestión 
 	por lo que una vez fabricados no pueden ser alterados en medidas tanto de 
 	claros como de alturas.';
+$l['controllers']['PublicCtl']['actions']['product4']['quote1'] = '';
+$l['controllers']['PublicCtl']['actions']['product4']['cite1'] = '';
+
+//+++++++++++++++++ ensamblado y estibado +++++++++++++++++++++++++++++++++++++++++++++++++
+
+$l['controllers']['PublicCtl']['actions']['product5']['head1'] = '';
+$l['controllers']['PublicCtl']['actions']['product5']['para1'] = '';
+$l['controllers']['PublicCtl']['actions']['product5']['head2'] = '';
+$l['controllers']['PublicCtl']['actions']['product5']['para2'] = '';
+$l['controllers']['PublicCtl']['actions']['product5']['head3'] = '';
+$l['controllers']['PublicCtl']['actions']['product5']['para3'] = '';
+$l['controllers']['PublicCtl']['actions']['product5']['quote1'] = '';
+$l['controllers']['PublicCtl']['actions']['product5']['cite1'] = '';
 
 //+++++++++++++++++ contact +++++++++++++++++++++++++++++++++++++++++++++++++
 $l['controllers']['PublicCtl']['actions']['contact']['tel'] = 'Teléfono';

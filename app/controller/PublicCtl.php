@@ -136,8 +136,17 @@ class PublicCtl extends TlalokesCoreController {
    */
   public function contact ()
   {
-  	 
-  	//Evaluate de active languaje to use it or not in the url
+  	//Evaluate if is getting a variable by post, show the message, else, show the form
+  	if ( $_SERVER['REQUEST_METHOD'] == 'POST' ){
+  		//validar entradas y en caso de estar bien, pasarlas a response
+  		$this->response->name_valid = $this->request->name;
+  		// send mail
+  		$this->response->form_message = 'mandado';
+  	} else {
+  		// display form
+  		$this->response->form_message = '';
+	}
+  	//Evaluate the active languaje to use it or not in the url
   	$this->response->changelang = PublicBss::evaluateLocale( $this->response->_locale,
   									   $this->default_locale );
   	 

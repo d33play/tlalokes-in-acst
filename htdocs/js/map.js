@@ -12,6 +12,7 @@ edos = ['AGU','BCN','BCS','CAM',
 		'YUC','GUAT','CUB',
 		'RDOM','NIC','PAN'
 		]
+		
 edos_names = [	'<h3>Aguascalientes</h3>' +
               	'<p>Tel. 01 (449) 012-7349<br />' +
               	'Tel. 01 (449) 914-8035</p>' + 
@@ -71,14 +72,10 @@ edos_names = [	'<h3>Aguascalientes</h3>' +
               	
 				'<h3>Guanajuato</h3>' +
               	'<p>Tel. 01 (477) 714-2550<br />' +
-              	'Tel. 01 (477) 714-2511</p>' +
+              	'Fax. 01 (477) 714-2511</p>' +
               	'<h4>Lic. Gerardo Alderete</h4>' +
               	'<p>Nextel. 52*16412*1</p>' +
-              	'<h4>Lic. Berenice Vega</h4>' +
-              	'<p>Mail. info@alderman.com.mx<br />' +
-              	'Mail. berenice@alderman.com.mx</p>' +
-              	'<h4>Ing. Mauricio Ramirez</h4>' +
-              	'<p>Mail. mramirez@alderman.com.mx</p>',
+              	'<p>Mail. info@alderman.com.mx<br />',
               	
 				'<h3>Jalisco</h3>' +
               	'<p>Tel. 3628-0006</p>' +
@@ -90,11 +87,9 @@ edos_names = [	'<h3>Aguascalientes</h3>' +
               	'<p>Tel. 01 (722) 212-0989</p>' +
               	'<h4>Lic. Alfredo Hernandez</h4>' +
               	'<p>Cel. 045 (722) 261-2053<br />' +
-              	'Mail. </p>' +
               	'<h4>Arq. Gabriel Gorostieta</h4>' +
               	'<p>Nextel. 52*141449*19<br />' +
-              	'Cel. 045 (722) 147-7721<br />' +
-              	'Mail. </p>',
+              	'Cel. 045 (722) 147-7721<br />',
               	
 				'<h3>Nayarit</h3>' +
               	'<p>Tel. 01 (311) 122-5554</p>' +
@@ -114,10 +109,11 @@ edos_names = [	'<h3>Aguascalientes</h3>' +
 				'<h3>Oaxaca</h3>' +
               	'<p>Tel. 01 (951) 516-0103</p>' +
               	'<h4>Arq. Joaquin Calderon Contreras</h4>' +
-              	'<p>Cel. 045 (951) 548-3394<br />' +
-              	'Mail. </p>' +
+              	'<p>Mail. acustimuroscalderonarquitectos@gmail.com<br />' +
+              	'Mail. joaquincalder37@hotmail.com<br />' +
+              	'Cel. 045 (951) 136.3789</p>' +
               	'<h4>Arq. Joaquin Calderon Gomez</h4>' +
-              	'<p>Mail. </p>',
+              	'<p>Cel. 045 (951) 548-3394</p>',
               	
 				'<h3>Querétaro</h3>' +
               	'<p>Tel. 01 (442) 213-5733</p>' +
@@ -191,10 +187,11 @@ edos_names = [	'<h3>Aguascalientes</h3>' +
                 '<p>Tel. (502) 2473-0285<br />' +
                 'Fax. (502) 2474-5383</p>' +
                 '<h4>Sr. Mario Castro</h4>' +
-                '<p>Cel. (502) 5704-6902<br />' +
+                '<p>Cel. (502) 5704-4948<br />' +
                 'Mail. mc@representacionescastro.com<br />' +
                 'Mail. mario@acustimuros.com</p>' +
                 '<h4>Ivette Castro</h4>' +
+                '<p>Cel. (502) 5704-6902<br />' +
                 '<p>Mail. ivette@marcasa.net<br />' +
                 'Mail. ivette@acustimuros.com</p>',
                 
@@ -238,18 +235,21 @@ edos_names = [	'<h3>Aguascalientes</h3>' +
                 '<p>Cel. 045 (999) 947-0784<br />' +
                 'Mail. ramil_soto@yahoo.com</p>'
 			]
+
 var a = $("mx_map")
 
 a.addEventListener("load",function(){
 	
 	var svgDoc = a.contentDocument;
-	var actual;
+	var actual = 'JAL';
 	
 	for(i=0; i < edos.length; i++){
 
+
 		edo = svgDoc.getElementById(edos[i])
-		edo.style.setProperty("cursor", "pointer", "")
-		fillColor(edo,colorOff)
+        edo.style.setProperty("cursor", "pointer", "")
+        fillColor(edo,colorOff);
+
 		
 		//on mouse over
 		edo.addEventListener("mouseover",function(){
@@ -258,14 +258,18 @@ a.addEventListener("load",function(){
 					fillColor(svgDoc.getElementById( e ),colorOff)
 			});
 			if( this.id != actual )
-				fillColor(this,colorOn)	
+				fillColor(this,colorOn)
 		},false);
 		
 		
 		edo.addEventListener("click",function(){
-			$('edo').innerHTML = edos_names[edos.indexOf(this.id) ]
+		    alert(this.id);
+		    fillColor(svgDoc.getElementById(actual),colorOff);
+			$('edo').innerHTML = edos_names[ edos.indexOf(this.id) ]
+			
 			actual = this.id;
-			fillColor(svgDoc.getElementById(this.id) , colorClick)
+			fillColor(svgDoc.getElementById(this.id) , colorClick);
+			
 		},false);
 	}
 },false);
