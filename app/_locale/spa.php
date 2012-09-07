@@ -270,6 +270,13 @@ $l['controllers']['PublicCtl']['actions']['contact']['formsubject'] = 'Asunto';
 $l['controllers']['PublicCtl']['actions']['contact']['formmessage'] = 'Mensaje';
 $l['controllers']['PublicCtl']['actions']['contact']['formsubmit'] = 'Enviar';
 
+$l['controllers']['PublicCtl']['actions']['contact']['form_sent_message'] = 'Su correo ha sido enviado';
+$l['controllers']['PublicCtl']['actions']['contact']['form_name_message'] = 'Escriba un nombre válido';
+$l['controllers']['PublicCtl']['actions']['contact']['form_mail_message'] = 'Escriba un correo electrónico válido';
+$l['controllers']['PublicCtl']['actions']['contact']['form_subject_message'] = 'Escriba un asunto';
+$l['controllers']['PublicCtl']['actions']['contact']['form_message_message'] = 'Debe escribir un mensaje';
+
+
 $l['controllers']['PublicCtl']['actions']['contact']['addtitle'] = 'Oficinas Administrativas';
 $l['controllers']['PublicCtl']['actions']['contact']['street'] = 'Avenida Guadalupe #4636.';
 $l['controllers']['PublicCtl']['actions']['contact']['col'] = 'Col. Jardines de Guadalupe.';
@@ -278,6 +285,7 @@ $l['controllers']['PublicCtl']['actions']['contact']['tel1'] = '(0133) 3699-1278
 $l['controllers']['PublicCtl']['actions']['contact']['tel2'] = '(0133) 3609-7686';
 $l['controllers']['PublicCtl']['actions']['contact']['fax'] = 'Fax: (0133) 3651-7610';
 $l['controllers']['PublicCtl']['actions']['contact']['mailto'] = 'contacto@acustimuros.com';
+
 
 //+++++++++++++++++ agents +++++++++++++++++++++++++++++++++++++++++++++++++
 $l['controllers']['PublicCtl']['actions']['agents']['head1'] = 'Nuestros representantes en cada región';

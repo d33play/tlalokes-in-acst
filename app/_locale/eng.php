@@ -255,6 +255,12 @@ $l['controllers']['PublicCtl']['actions']['contact']['formsubject'] = 'Subject';
 $l['controllers']['PublicCtl']['actions']['contact']['formmessage'] = 'Message';
 $l['controllers']['PublicCtl']['actions']['contact']['formsubmit'] = 'Send';
 
+$l['controllers']['PublicCtl']['actions']['contact']['form_sent_message'] = 'Su correo ha sido enviado';
+$l['controllers']['PublicCtl']['actions']['contact']['form_name_message'] = 'Escriba un nombre válido';
+$l['controllers']['PublicCtl']['actions']['contact']['form_mail_message'] = 'Escriba un correo electrónico válido';
+$l['controllers']['PublicCtl']['actions']['contact']['form_subject_message'] = 'Escriba un asunto';
+$l['controllers']['PublicCtl']['actions']['contact']['form_message_message'] = 'Debe escribir un mensaje';
+
 $l['controllers']['PublicCtl']['actions']['contact']['addtitle'] = 'Headquarters';
 $l['controllers']['PublicCtl']['actions']['contact']['street'] = 'Avenida Guadalupe #4636.';
 $l['controllers']['PublicCtl']['actions']['contact']['col'] = 'Col. Jardines de Guadalupe.';

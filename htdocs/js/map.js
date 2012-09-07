@@ -263,7 +263,6 @@ a.addEventListener("load",function(){
 		
 		
 		edo.addEventListener("click",function(){
-		    alert(this.id);
 		    fillColor(svgDoc.getElementById(actual),colorOff);
 			$('edo').innerHTML = edos_names[ edos.indexOf(this.id) ]
 			

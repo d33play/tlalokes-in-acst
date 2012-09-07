@@ -136,19 +136,88 @@ class PublicCtl extends TlalokesCoreController {
    */
   public function contact ()
   {
-  	//Evaluate if is getting a variable by post, show the message, else, show the form
-  	if ( $_SERVER['REQUEST_METHOD'] == 'POST' ){
-  		//validar entradas y en caso de estar bien, pasarlas a response
-  		$this->response->name_valid = $this->request->name;
-  		// send mail
-  		$this->response->form_message = 'mandado';
-  	} else {
-  		// display form
-  		$this->response->form_message = '';
-	}
   	//Evaluate the active languaje to use it or not in the url
   	$this->response->changelang = PublicBss::evaluateLocale( $this->response->_locale,
   									   $this->default_locale );
+	
+	$a=0;
+									   
+  	//Evaluate if is getting a variable by post, send mail
+  	if ( $_SERVER['REQUEST_METHOD'] == 'POST' ){
+  		
+  		//validating the entries
+  		if(preg_match("/^[a-zA-Z][a-zA-Z ]+$/", $this->request->name)){
+  			$this->response->name_value = $this->request->name;
+			$this->response->name_message = false;
+		}
+		else {
+			$this->response->name_message = true;
+			$a++;
+		}
+		
+		if(preg_match("/^[0-9a-z_\-\.]+@[0-9a-z\-\.]+\.[a-z]{2,4}$/", $this->request->mail)){
+  			$this->response->mail_value = $this->request->mail;
+			$this->response->mail_message = false;
+		}
+		else {
+			$this->response->mail_message = true;
+			$a++;
+		}
+		
+		if(preg_match("/\w+$/", $this->request->subject)){
+  			$this->response->subject_value = $this->request->subject;
+			$this->response->subject_message = false;
+		}
+		else {
+			$this->response->subject_message = true;
+			$a++;
+		}
+		
+		if(preg_match("/\w+$/", $this->request->message)){
+  			$this->response->message_value = $this->request->message;
+			$this->response->message_message = false;
+		}
+		else {
+			$this->response->message_message = true;
+			$a++;	
+		}
+		
+		
+  		// send mail
+  		if($a == 0){
+  			$this->response->form_message = true;
+
+			$to1= $this->response->mail_value;
+			$subject1 = "Contacto con Acustimuros: ".(string)$this->response->subject_value;
+			$mess1 = '			
+				<div style="margin: auto; padding: auto; color: black; text-align: center;">
+				<h3 style=" color:#190710; " >Gracias por tus comentarios! </h3>
+				<p>Estimado'.(string)$this->response->name_value.': </p>
+				<p>Hemos recibido exitosamente tu mensaje:<br />
+				<br /><br />
+				<strong>'.(string)$this->response->message_value.'</strong><br /></p>
+				<p>En breve uno de nuestros ejecutivos se pondrá en contacto contigo.</p>
+				</div>';
+			
+			$header = "From: contacto@acustimuros.com\n";
+			$header .= "Content-type: text/html\r\n";
+			$header .= "Content-type: text/html; charset=UTF-8\r\n";
+			
+			//message for success send
+			if(mail($to1, $subject1, $mess1, $header))
+				$this->response->form_message = true;
+
+			
+			//clear all the variable values 			
+  			unset($this->response->name_value);
+			unset($this->response->mail_value);
+			unset($this->response->subject_value);
+			unset($this->response->message_value);
+  			
+		}
+  	}
+
+  	
   	 
   }
   
@@ -158,7 +227,7 @@ class PublicCtl extends TlalokesCoreController {
   public function agents ()
   {
   
-  	//Evaluate de active languaje to use it or not in the url
+  	//Evaluate the active language to use it or not in the url
   	$this->response->changelang = PublicBss::evaluateLocale( $this->response->_locale,
   									   $this->default_locale );
   
