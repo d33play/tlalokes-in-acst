@@ -192,7 +192,7 @@ class PublicCtl extends TlalokesCoreController {
 			$mess1 = '			
 				<div style="margin: auto; padding: auto; color: black; text-align: center;">
 				<h3 style=" color:#190710; " >Gracias por tus comentarios! </h3>
-				<p>Estimado'.(string)$this->response->name_value.': </p>
+				<p>Estimado '.(string)$this->response->name_value.': </p>
 				<p>Hemos recibido exitosamente tu mensaje:<br />
 				<br /><br />
 				<strong>'.(string)$this->response->message_value.'</strong><br /></p>
